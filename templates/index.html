@@ -1,5 +1,10 @@
 {% extends "posts.html" %}
 
+{% block head_suffix %}
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/news.css" rel="stylesheet">
+{% endblock head_suffix %}
+
 {% block topcontent %}
     <!-- Carousel
     ================================================== -->
@@ -141,6 +146,19 @@
          can be used by academic and commercial entities.</p>
         <p><a class="btn btn-primary" href="pages/access.html" role="button">View instructions &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <div class="row">
+      <div class="col-md-12">
+        <a id="news"></a>
+        <h2 style="text-align:center">News &amp; Updates</h2>
+        <a class="twitter-timeline" href="https://twitter.com/studyforrest"
+           data-widget-id="435327568237965312"
+           data-link-color="#428bca"
+           height="150px"
+           data-show-replies="false"
+           data-chrome="noheader nofooter transparent">Tweets by @studyforrest</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div><!-- /.col-md-12 -->
     </div><!-- /.row -->
     </div><!-- /.marketing -->
 
