@@ -121,9 +121,6 @@
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                {% for title, link in MENUITEMS %}
-                    <li><a href="{{ link }}">{{ title }}</a></li>
-                {% endfor %}
                 {% if DISPLAY_PAGES_ON_MENU %}
                     {% for p in PAGES %}
                          <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">
@@ -138,6 +135,9 @@
                         </li>
                     {% endfor %}
                 {% endif %}
+                {% for title, link in MENUITEMS %}
+                    <li><a href="{{ link }}" target="_blank">{{ title }}</a></li>
+                {% endfor %}
             </ul>
             <ul class="nav navbar-nav navbar-right">
             {% if 'tipue_search' in PLUGINS %}
